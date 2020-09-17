@@ -2,7 +2,7 @@
 - Akshar Gajjar \<ang399@usask.ca\>
 - Ben Fehr \<\>
 - Devin Ramaswami \<\>
-- Travis Baldwin \<\>
+- Travis Baldwin \<twb639@usask.ca\>
 - Yee Jing Shin \<\>
 
 ## Project Description
