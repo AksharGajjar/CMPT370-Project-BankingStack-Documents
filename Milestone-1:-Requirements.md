@@ -14,9 +14,12 @@
 - Ability to connect to and manage PayPal account.
 - User should only have to log into each of their bank accounts once using the application
 - Transaction and balance data should update when user logs in and allow on demand refreshes afterwards
+- Allows users to view the last 12 months of transactions
+- 
 
 **Should Have Features**
 
+- Alert user if overdraft has occurred
 - Ability to track all user subscriptions.
 - A notes area to save and manage ideas, finance goals, and personal finance strategies.
 
