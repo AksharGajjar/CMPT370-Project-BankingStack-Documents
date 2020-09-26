@@ -48,46 +48,47 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 
 ## List of Actors, Scenarios, and Use Cases
 
-**primary actors :**
-	1) online-user
-	2) sysmtem 
-	3) bank
-	4) paypal
+**primary actors:**
+- online-user
+- system 
+- bank
+- PayPal
 
 **precondition:** 
-	The network connection is active.
-	Bank account to connect.
+- The network connection is active.
+- Bank account to connect.
 
 **use case:** 
 online-user:
-	1) log in.
-	2) connect to their bank account.
-	3) connect to their paypal account.
+- log in.
+- connect to their bank account.
+- connect to their PayPal account.
 system:
-	1) send validation request
-	2) gather informations from either 
-	3) shows linked bank account balance.
-	4) shows linked paypal account balance.
-	5) encrypt the user's information.
-	6) keep the information update every 5 minutes.
-	6) 
+- send a validation request
+- gather information from either 
+- shows linked bank account balance.
+- shows linked PayPal account balance.
+- encrypt the user's information.
+- keep the information updated every 5 minutes.
+-
+ 
 bank:
-	1) receiving a validation request from the application.
-	2) check validation from the user.
-	3) allowing users to link and access their bank account. 
-	4) send information to the application 
+- receiving a validation request from the application.
+- check validation from the user.
+- allowing users to link and access their bank account. 
+- send information to the application 
 Paypal:
-	1) receiving a validation request from our application.
-	2) check validation from the user.
-	3) allowing users to link and access their PayPal. 
-	4) send the user's PayPal information to the application.
+- receiving a validation request from our application.
+- check validation from the user.
+- allowing users to link and access their PayPal. 
+- send the user's PayPal information to the application.
 **The basic flow of event:**
-	1) user create an account 
-	2) user logs in to their account to the application.
-	3) connecting their bank account or PayPal account to the application.
-	4) application will send validation to the bank/PayPal and verify the user.
-	5) The user gets validated.
-	6) system will get the information from the bank/Paypal.
-	7) system will show the balance of the user's bank/PayPal account.
+- user create an account 
+- user logs in to their account to the application.
+- connecting their bank account or PayPal account to the application.
+- application will send validation to the bank/PayPal and verify the user.
+- The user gets validated.
+- system will get the information from the bank/Paypal.
+- system will show the balance of the user's bank/PayPal account.
 
 ## UML Standard Diagrams
