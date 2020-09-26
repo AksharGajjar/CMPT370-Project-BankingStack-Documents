@@ -10,12 +10,12 @@
 - Ability to connect to the top 4 Canadian banks (RBC, Scotia, TD, CIBC).
 - Ability to check account balance.
 - Encryption to store and manage sensitive user credentials.
+- Ability to view transaction activity for connected accounts.
+- Ability to connect to and manage PayPal account.
 
 **Should Have Features**
 
-- Ability to view transaction activity for connected accounts.
 - Ability to track all user subscriptions.
-- Ability to connect to and manage PayPal account.
 - A notes area to save and manage ideas, finance goals, and personal finance strategies.
 
 **Could Have Features**
