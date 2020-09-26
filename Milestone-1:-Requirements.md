@@ -59,6 +59,7 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 - Bank account to connect.
 
 **use case:** 
+
 online-user:
 - log in.
 - connect to their bank account.
@@ -77,6 +78,7 @@ bank:
 - check validation from the user.
 - allowing users to link and access their bank account. 
 - send information to the application 
+
 Paypal:
 - receiving a validation request from our application.
 - check validation from the user.
