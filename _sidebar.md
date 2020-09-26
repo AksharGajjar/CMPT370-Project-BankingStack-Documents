@@ -15,6 +15,7 @@
 
 #### Meeting Minutes
 
+[2020-09-14](Meeting Minutes 2020 09 14)
 [2020-09-22](Meeting Minutes 2020-09-22)
 
 ---
