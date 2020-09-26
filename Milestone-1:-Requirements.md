@@ -22,6 +22,8 @@
 - Alert user if overdraft has occurred
 - Ability to track all user subscriptions.
 - A notes area to save and manage ideas, finance goals, and personal finance strategies.
+- Users can attach notes to transactions
+- Should provide a workspace for users to plan out financial strategies
 
 **Could Have Features**
 
@@ -29,6 +31,7 @@
 - Ability to track additional assets such as gold, real estate, vehicle(s), Crypto, etc.
 - Ability to pay bills and transfer money.
 - Add messaging functionality between users that share bank accounts.
+- Displays user customized news feed
 
 ## List of Actors, Scenarios, and Use Cases
 
