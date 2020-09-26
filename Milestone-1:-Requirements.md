@@ -48,23 +48,22 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 
 ## List of Actors, Scenarios, and Use Cases
 
-**primary actors :
+**primary actors :**
 	1) online-user
 	2) sysmtem 
 	3) bank
 	4) paypal
 
-**precondition: 
+**precondition:** 
 	The network connection is active.
 	Bank account to connect.
 
-**use case: 
-- online-user:
+**use case:** 
+online-user:
 	1) log in.
 	2) connect to their bank account.
 	3) connect to their paypal account.
-
-- system:
+system:
 	1) send validation request
 	2) gather informations from either 
 	3) shows linked bank account balance.
@@ -72,20 +71,17 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 	5) encrypt the user's information.
 	6) keep the information update every 5 minutes.
 	6) 
-
-- bank:
-	1) recieving validation request from the application.
-	2) check validation from user.
-	3) allowing user to link and access their bank account. 
-	4) send informations to the application 
-	
-- paypal:
-	1) recieving validation request from our application.
-	2) check validation from user.
-	3) allowing user to link and access their paypal. 
-	4) send user's paypal informations to the the application.
-
-**Basic flow of event:
+bank:
+	1) receiving a validation request from the application.
+	2) check validation from the user.
+	3) allowing users to link and access their bank account. 
+	4) send information to the application 
+Paypal:
+	1) receiving a validation request from our application.
+	2) check validation from the user.
+	3) allowing users to link and access their PayPal. 
+	4) send the user's PayPal information to the application.
+**The basic flow of event:**
 	1) user create an account 
 	2) user logs in to their account to the application.
 	3) connecting their bank account or PayPal account to the application.
