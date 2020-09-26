@@ -28,7 +28,7 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 - User should only have to log in to each of their bank accounts once using the application
 - Transaction and balance data should update when the user logs in and allow on-demand refreshes afterward
 - APIs should be obfuscated from user
-- 
+- Load time for pages must be lest than 2 seconds
 
 **Should Have Features**
 
