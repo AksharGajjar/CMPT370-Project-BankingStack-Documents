@@ -34,9 +34,8 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 
 - Alert the user if overdraft has occurred
 - Ability to track all user subscriptions.
-- A notes area to save and manage ideas, finance goals, and personal finance strategies.
 - Users can attach notes to transactions
-- Should provide a workspace for users to plan out financial strategies
+- Provide a workspace for users to plan out financial strategies
 
 **Could Have Features**
 
