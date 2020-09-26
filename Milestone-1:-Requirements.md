@@ -48,4 +48,50 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 
 ## List of Actors, Scenarios, and Use Cases
 
+**primary actors :
+	1) online-user
+	2) sysmtem 
+	3) bank
+	4) paypal
+
+**precondition: 
+	The network connection is active.
+	Bank account to connect.
+
+**use case: 
+- online-user:
+	1) log in.
+	2) connect to their bank account.
+	3) connect to their paypal account.
+
+- system:
+	1) send validation request
+	2) gather informations from either 
+	3) shows linked bank account balance.
+	4) shows linked paypal account balance.
+	5) encrypt the user's information.
+	6) keep the information update every 5 minutes.
+	6) 
+
+- bank:
+	1) recieving validation request from the application.
+	2) check validation from user.
+	3) allowing user to link and access their bank account. 
+	4) send informations to the application 
+	
+- paypal:
+	1) recieving validation request from our application.
+	2) check validation from user.
+	3) allowing user to link and access their paypal. 
+	4) send user's paypal informations to the the application.
+
+**Basic flow of event:
+	1) user create an account 
+	2) user logs in to their account to the application.
+	3) connecting their bank account or PayPal account to the application.
+	4) application will send validation to the bank/PayPal and verify the user.
+	5) The user gets validated.
+	6) system will get the information from the bank/Paypal.
+	7) system will show the balance of the user's bank/PayPal account.
+
 ## UML Standard Diagrams
