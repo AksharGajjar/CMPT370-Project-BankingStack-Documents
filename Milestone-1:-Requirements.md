@@ -82,6 +82,7 @@ Paypal:
 - check validation from the user.
 - allowing users to link and access their PayPal. 
 - send the user's PayPal information to the application.
+
 **The basic flow of event:**
 - user create an account 
 - user logs in to their account to the application.
