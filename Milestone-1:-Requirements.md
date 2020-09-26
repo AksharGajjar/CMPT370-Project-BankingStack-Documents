@@ -12,6 +12,8 @@
 - Encryption to store and manage sensitive user credentials.
 - Ability to view transaction activity for connected accounts.
 - Ability to connect to and manage PayPal account.
+- User should only have to log into each of their bank accounts once using the application
+- Transaction and balance data should update when user logs in and allow on demand refreshes afterwards
 
 **Should Have Features**
 
