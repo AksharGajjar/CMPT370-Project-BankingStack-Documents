@@ -95,3 +95,5 @@ Paypal:
 - system will show the balance of the user's bank/PayPal account.
 
 ## UML Standard Diagrams
+
+![CMPT_370_UML_Use_Case_Diagram](uploads/8801bf5dc4889c90877641c4f441dd4f/CMPT_370_UML_Use_Case_Diagram.jpeg)
