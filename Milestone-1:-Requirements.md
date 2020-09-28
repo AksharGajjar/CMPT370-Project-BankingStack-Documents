@@ -51,6 +51,7 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 **primary actors:**
 - online-user
 - system 
+- API
 - bank
 - PayPal
 
@@ -64,25 +65,26 @@ online-user:
 - log in.
 - connect to their bank account.
 - connect to their PayPal account.
+
 system:
-- send a validation request
+- send a validation request.
 - gather information from either 
-- shows linked bank account balance.
-- shows linked PayPal account balance.
+- shows linked bank account transactions.
+- shows linked PayPal account transactions.
 - encrypt the user's information.
-- keep the information updated every 5 minutes.
--
+- keep the information updated.
+
+API:
+- receiving a validation request from the application and send it to the bank/PayPal.
+- send login information to the bank/PayPal to get validation.
+- allowing users to link and access their bank/PayPal account. 
  
 bank:
-- receiving a validation request from the application.
-- check validation from the user.
-- allowing users to link and access their bank account. 
-- send information to the application 
+- validate the user.
+- send information to the application.
 
 Paypal:
-- receiving a validation request from our application.
-- check validation from the user.
-- allowing users to link and access their PayPal. 
+- validate the user.
 - send the user's PayPal information to the application.
 
 **The basic flow of event:**
