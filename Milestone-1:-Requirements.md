@@ -96,6 +96,6 @@ Paypal:
 - system will get the information from the bank/Paypal.
 - system will show the balance of the user's bank/PayPal account.
 
-## UML Standard Diagrams
+## UML Use Case Diagrams
 
 ![CMPT_370_UML_Use_Case_Diagram](uploads/c6eb5dfa5e337c4d1d98ac056329bf30/CMPT_370_UML_Use_Case_Diagram.jpeg)
