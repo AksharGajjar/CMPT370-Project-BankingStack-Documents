@@ -48,53 +48,52 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 
 ## List of Actors, Scenarios, and Use Cases
 
-**primary actors:**
-- online-user
-- system 
-- API
-- bank
-- PayPal
+**Use case 1.0	Check balance in bank**
 
-**precondition:** 
-- The network connection is active.
-- Bank account to connect.
+Primary actors:	User
+		system
+		PlaidAPI
+		Bank
 
-**use case:** 
+Preconditions:	Network connection is active
+		Bank account exists to connect to
 
-online-user:
-- log in.
-- connect to their bank account.
-- connect to their PayPal account.
+Flow of events:
+1.	User signs into account
+2.	User selects bank to access
+3.	PlaidAPI request to bank is sent using bank credentials
+4.	User is validated
+5.	Data is retrieved from bank
+6.	Balance is shown
 
-system:
-- send a validation request.
-- gather information from either 
-- shows linked bank account transactions.
-- shows linked PayPal account transactions.
-- encrypt the user's information.
-- keep the information updated.
+Alternate Flows
+1a.	User creates account
+2a.	User adds a bank to app for future use
+4a.	User credentials are invalid, given error message
 
-API:
-- receiving a validation request from the application and send it to the bank/PayPal.
-- send login information to the bank/PayPal to get validation.
-- allowing users to link and access their bank/PayPal account. 
- 
-bank:
-- validate the user.
-- send information to the application.
+**Use case 1.1	Check balance in Paypal**
 
-Paypal:
-- validate the user.
-- send the user's PayPal information to the application.
+Primary actors:	User
+		system
+		PlaidAPI
+		Paypal
 
-**The basic flow of event:**
-- user create an account 
-- user logs in to their account to the application.
-- connecting their bank account or PayPal account to the application.
-- application will send validation to the bank/PayPal and verify the user.
-- The user gets validated.
-- system will get the information from the bank/Paypal.
-- system will show the balance of the user's bank/PayPal account.
+Preconditions:	Network connection is active
+		Paypal account exists to connect to
+
+Flow of events:
+1.	User signs into account
+2.	User chooses to use Paypal
+3.	PlaidAPI request to Paypal is sent using Paypal login
+4.	User is validated
+5.	Data is retrieved from Paypal
+6.	Balance is shown
+
+Alternate Flows
+1a.	User creates account
+2a.	User adds a Paypal account to app for future use
+4a.	User credentials are invalid, given error message
+
 
 ## UML Use Case Diagrams
 
