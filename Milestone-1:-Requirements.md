@@ -98,4 +98,10 @@ Paypal:
 
 ## UML Use Case Diagrams
 
-![CMPT_370_UML_Use_Case_Diagram](uploads/c6eb5dfa5e337c4d1d98ac056329bf30/CMPT_370_UML_Use_Case_Diagram.jpeg)
+[UML Use Case Preliminary Diagram](uploads/c6eb5dfa5e337c4d1d98ac056329bf30/CMPT_370_UML_Use_Case_Diagram.jpeg)
+
+![CMPT_370_UML_Use_Case_1](uploads/5c56665ed74e35d7078e2ec423bb417d/CMPT_370_UML_Use_Case_1.jpeg)
+
+![CMPT_370_UML_Use_Case_2](uploads/21a8ab57dc48e5ed03f2f6aea3e36ba9/CMPT_370_UML_Use_Case_2.jpeg)
+
+![CMPT_370_UML_Use_Case_3](uploads/6443ab91edd0f4d6f651db275708956c/CMPT_370_UML_Use_Case_3.jpeg)
