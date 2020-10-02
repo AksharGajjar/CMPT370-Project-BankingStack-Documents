@@ -1,4 +1,4 @@
-# Due Oct 2nd
+# Milestone 1: Requirements
 
 ## Product Description
 
@@ -25,18 +25,18 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 - Encryption to store and manage sensitive user credentials.
 - Ability to view the last 12 months of transaction activity for connected accounts.
 - Ability to connect to and manage PayPal account.
-- User should only have to log in to each of their bank accounts once using the application
-- Transaction and balance data should update when the user logs in and allow on-demand refreshes afterward
-- APIs should be obfuscated from user
-- Load time for pages must be less than 2 seconds
-- Program should run off of an executable
+- Users should only have to log in to each of their bank accounts once using the application.
+- Transaction and balance data should update when the user logs in and allow on-demand refreshes afterward.
+- APIs should be obfuscated from the user.
+- Load time for pages must be less than 2 seconds.
+- The program should run off of an executable.
 
 **Should Have Features**
 
-- Alert the user if overdraft has occurred
+- Alert the user if an overdraft has occurred.
 - Ability to track all user subscriptions.
-- Users can attach notes to transactions
-- Provide a workspace for users to plan out financial strategies
+- Users can attach notes to transactions.
+- Provide a workspace for users to plan out financial strategies.
 
 **Could Have Features**
 
@@ -44,10 +44,18 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 - Ability to track additional assets such as gold, real estate, vehicle(s), Crypto, etc.
 - Ability to pay bills and transfer money.
 - Add messaging functionality between users that share bank accounts.
-- Displays user-customized news feed
+- Displays user-customized news feed.
 
 ## List of Actors, Scenarios, and Use Cases
 
+**List of Actors**
+- User
+- Plaid API
+- Bank Institutions
+- PayPal
+- Financial App System
+
+-----------------------------------------------------------------------------------------------
 **Use case 1.0	Check balance in bank**
 
 Primary actors:	User
@@ -55,53 +63,101 @@ Primary actors:	User
 		PlaidAPI
 		Bank
 
-Preconditions:	Network connection is active
-		Bank account exists to connect to
+Preconditions:	A network connection is active.
+		A bank account exists to connect to.
 
 Flow of events:
-1.	User signs into account
-2.	User selects bank to access
-3.	PlaidAPI request to bank is sent using bank credentials
-4.	User is validated
-5.	Data is retrieved from bank
-6.	Balance is shown
+1.	User signs into account.
+2.	User selects bank to access.
+3.	PlaidAPI request to the bank is sent using bank credentials.
+4.	User is validated.
+5.	Data is retrieved from the bank.
+6.	Balance is shown.
 
-Alternate Flows
-1a.	User creates account
-2a.	User adds a bank to app for future use
-4a.	User credentials are invalid, given error message
+Alternate Flows:<br/>
+1a.	User creates an account.<br/>
+2a.	User adds a bank to the app for future use.<br/>
+4a.	User credentials are invalid, given an error message.<br/>
+6a.	A warning is shown along with the balance if there is an overdraft in the account balance.
 
-**Use case 1.1	Check balance in Paypal**
+-----------------------------------------------------------------------------------------------
+**Use case 1.1	Check transactions in bank**
 
 Primary actors:	User
 		system
 		PlaidAPI
-		Paypal
+		Bank
 
-Preconditions:	Network connection is active
-		Paypal account exists to connect to
+Preconditions:	A network connection is active.
 
 Flow of events:
-1.	User signs into account
-2.	User chooses to use Paypal
-3.	PlaidAPI request to Paypal is sent using Paypal login
-4.	User is validated
-5.	Data is retrieved from Paypal
-6.	Balance is shown
+1.	User logs into the application.
+2.	User navigates to the transactions page.
+3.	User selects the bank account for which they wish to see transactions.
+4.	User specifies the time range for which they wish to see transactions.
+5.	User adds a note to a specific transaction for future reference.
 
-Alternate Flows
-1a.	User creates account
-2a.	User adds a Paypal account to app for future use
-4a.	User credentials are invalid, given error message
+
+Alternate Flows:<br/>
+1a.	User creates an account.<br/>
+1b.	User adds a bank to the app for future use.<br/>
+1c.     User's bank credentials are validated by the bank and Plaid API.<br/>
+1d.	User credentials are invalid, given an error message.
+
+-----------------------------------------------------------------------------------------------
+**Use case 1.2	Check the balance in Paypal**
+
+Primary actors:	User
+		system
+		Paypal
+
+Preconditions:	A network connection is active
+		A Paypal account exists to connect to
+
+Flow of events:
+1.	User signs into account.
+2.	User chooses to use Paypal.
+3.	Request to Paypal is sent using Paypal API.
+4.	User is validated.
+5.	Data is retrieved from Paypal.
+6.	Balance is shown.
+
+Alternate Flows:<br/>
+1a.	User creates an account.<br/>
+2a.	User adds a Paypal account to the app for future use.<br/>
+4a.	User credentials are invalid, given an error message.
+
+-----------------------------------------------------------------------------------------------
+**Use Case 1.3 Create Financial Plan/Access news articles and financial literacy material**
+
+Primary actors:	User
+		system
+
+Preconditions:	The user has created an account with the platform and is logged in.
+
+Flow of events:
+1.	User navigates to the financial strategy page.
+2.	User selects to create a new note.
+3.	User adds whatever information they wish.
+4.	User reads the latest news articles presented on the page.
+
+Alternate Flows:<br/>
+1a.	User interacts with financial literacy resources available on the strategy page.<br/>
+2a.	User reads news articles presented on the strategy page.<br/>
+4a.	User filters new articles presented on the strategy page as per their preferences.
+
+-----------------------------------------------------------------------------------------------
 
 **Scenarios**
 
 1.	User logs into the application.
-2	User chooses a bank/PayPal to link.
-3.	Balance of the linked bank/PayPal will be shown.
-4.	If overdraft occurs user will be notified by the application.
-5.	User can leave a note after they did a transaction.
-6.	A refresh button has to be press when the user whish to see the updated balance.
+2.	User chooses a bank/PayPal to link.
+3.	User views the balance of the linked bank/PayPal account.
+4.	User views the transactions of a linked bank account.
+5.	User attaches a note to a specific transaction.
+6.	User manually refreshes the page to see an updated balance.
+7.	User creates notes containing financial plans and goals.
+8.	User reads articles presented on the financial strategy page.
 
 ## UML Use Case Diagrams
 
