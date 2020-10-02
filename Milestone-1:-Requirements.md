@@ -28,7 +28,7 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 - User should only have to log in to each of their bank accounts once using the application
 - Transaction and balance data should update when the user logs in and allow on-demand refreshes afterward
 - APIs should be obfuscated from user
-- Load time for pages must be lest than 2 seconds
+- Load time for pages must be less than 2 seconds
 - Program should run off of an executable
 
 **Should Have Features**
@@ -94,6 +94,14 @@ Alternate Flows
 2a.	User adds a Paypal account to app for future use
 4a.	User credentials are invalid, given error message
 
+**Scenarios**
+
+1.	User logs into the application.
+2	User chooses a bank/PayPal to link.
+3.	Balance of the linked bank/PayPal will be shown.
+4.	If overdraft occurs user will be notified by the application.
+5.	User can leave a note after they did a transaction.
+6.	A refresh button has to be press when the user whish to see the updated balance.
 
 ## UML Use Case Diagrams
 
