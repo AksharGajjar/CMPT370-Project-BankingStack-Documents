@@ -6,4 +6,4 @@ Agenda:
 
 Minutes for Tuesday, October 6th, 2020:
 
-[cmpt370_group9_meeting_06_10_2020.docx](uploads/04af180da9f5574d06a1d2fa161174ad/cmpt370_group9_meeting_06_10_2020.docx)
+[cmpt370_group9_meeting_06_10_2020.docx](uploads/88fba8b4166967e138274d72ac2cab99/cmpt370_group9_meeting_06_10_2020.docx)
