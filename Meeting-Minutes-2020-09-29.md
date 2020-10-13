@@ -5,4 +5,5 @@ Agenda:
 4.   Assign a person the responsibility of submitting the milestone before the due date.
 
 Minutes for Tuesday, September 29nd, 2020:
+
 [cmpt370_group9_meeting_26_09_2020.docx](uploads/3bac92eea8df86465c81deacf872046c/cmpt370_group9_meeting_26_09_2020.docx)
