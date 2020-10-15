@@ -7,4 +7,6 @@ Early Low-fidelity Sketchs
 
 
 **Sequence Diagrams**
+
+
 ![SequnceDiagramCheckBalanceV1](uploads/0b3202c819dfb60b48c756fa31478412/SequnceDiagramCheckBalanceV1.jpg)
