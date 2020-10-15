@@ -10,3 +10,9 @@ Initial Low-fidelity Sketches
 
 
 ![SequnceDiagramCheckBalanceV1](uploads/3d25502d84abb9057dc8bbdc32bd9b93/SequnceDiagramCheckBalanceV1.jpg)
+
+System Architecture
+-Layered architecture style
+
+Persistent Storage details
+-one database one application setup
