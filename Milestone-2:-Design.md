@@ -1,10 +1,10 @@
 # Due Oct 19th
 
-Early Low-fidelity Sketchs
-![20201013_164350](uploads/86b8699a21861f5035d294e569cde608/20201013_164350.jpg)
+Initial Low-fidelity Sketches
 
-![20201013_165703](uploads/ee6c9fed2c0fdea6af328cbff8cfaaa1/20201013_165703.jpg)
+![20201015_143908](uploads/c0f45f3d5821d4a1b5aa07fd56c00267/20201015_143908.jpg)
 
+![20201015_143840](uploads/52af68cbbf9cb155713cbcfa57ad058d/20201015_143840.jpg)
 
 **Sequence Diagrams**
 
