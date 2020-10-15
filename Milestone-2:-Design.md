@@ -9,4 +9,4 @@ Initial Low-fidelity Sketches
 **Sequence Diagrams**
 
 
-![SequnceDiagramCheckBalanceV1](uploads/0b3202c819dfb60b48c756fa31478412/SequnceDiagramCheckBalanceV1.jpg)
+![SequnceDiagramCheckBalanceV1](uploads/3d25502d84abb9057dc8bbdc32bd9b93/SequnceDiagramCheckBalanceV1.jpg)
