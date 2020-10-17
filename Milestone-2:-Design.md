@@ -21,7 +21,16 @@ System Architecture
 
 **Sequence Diagrams**
 
-![SequnceDiagramCheckBalanceV1](uploads/3d25502d84abb9057dc8bbdc32bd9b93/SequnceDiagramCheckBalanceV1.jpg)
+![SequnceDiagramAddBankV1](uploads/07f5297a61d8b8ab7f2eee746140548f/SequnceDiagramAddBankV1.jpg)
+
+![SequnceDiagramCheckBalanceV2](uploads/9ffa80cb9445394e9b19eaba57e8bbb2/SequnceDiagramCheckBalanceV2.jpg)
+
+![SequnceDiagramGetTransactionHistoryV1](uploads/75bacf3c8ea7ab622749b5de44a5a97f/SequnceDiagramGetTransactionHistoryV1.jpg)
+
+![SequnceDiagramMakeAccounteV1](uploads/fd21543f524aec935ef81136c63ff98f/SequnceDiagramMakeAccounteV1.jpg)
+
+![SequnceDiagramNewsV1](uploads/844281b0bab67e340b3b546e28814ed2/SequnceDiagramNewsV1.jpg)
+
 
 # Persistent Storage Details
 
