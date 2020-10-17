@@ -1,6 +1,6 @@
 # Due Oct 19th
 
-## Storyboards
+# Storyboards
 
 Storyboard for Use Case 1.0 - 1.3:
 - 1.0 - Check balance in bank
@@ -10,13 +10,23 @@ Storyboard for Use Case 1.0 - 1.3:
 
 ![20201017_163748](uploads/afd4a43d511e2b36865b84cf19f2a9ac/20201017_163748.jpg)
 
-**Sequence Diagrams**
+# Domain Models
 
-
-![SequnceDiagramCheckBalanceV1](uploads/3d25502d84abb9057dc8bbdc32bd9b93/SequnceDiagramCheckBalanceV1.jpg)
+# System Architecture Details
 
 System Architecture
 -Layered architecture style
 
+# Interaction Diagrams
+
+**Sequence Diagrams**
+
+![SequnceDiagramCheckBalanceV1](uploads/3d25502d84abb9057dc8bbdc32bd9b93/SequnceDiagramCheckBalanceV1.jpg)
+
+# Persistent Storage Details
+
 Persistent Storage details
 -one database one application setup
+
+
+
