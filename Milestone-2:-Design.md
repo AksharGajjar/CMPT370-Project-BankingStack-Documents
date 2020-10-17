@@ -1,10 +1,14 @@
 # Due Oct 19th
 
-Initial Low-fidelity Sketches
+## Storyboards
 
-![20201015_143908](uploads/c0f45f3d5821d4a1b5aa07fd56c00267/20201015_143908.jpg)
+Storyboard for Use Case 1.0 - 1.3:
+- 1.0 - Check balance in bank
+- 1.1 - Check transactions in bank
+- 1.2 - Check the balance in PayPal
+- 1.3 - Create Financial Plan/Access news articles and financial literacy material
 
-![20201015_143840](uploads/52af68cbbf9cb155713cbcfa57ad058d/20201015_143840.jpg)
+![20201017_163748](uploads/afd4a43d511e2b36865b84cf19f2a9ac/20201017_163748.jpg)
 
 **Sequence Diagrams**
 
