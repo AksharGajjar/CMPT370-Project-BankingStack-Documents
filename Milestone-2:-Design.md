@@ -91,3 +91,46 @@ institutions.json:
     "request_id": "xxxxxxxxxxxxx"
 }
 ```
+userCredentials.json:
+```json
+{
+      "username": "Steve",
+      "name": " John Smith",
+      "email": "jsmith@mail.com",
+      "password": "hellowworld",
+      "validation": TRUE,
+      "creationDate": "15/10/2020",
+      "secretKey": "6EB29Z7",
+  }
+```
+
+accountData.json:
+```json
+{
+  "accounts": [
+  {
+    "accountID": 123456,
+    "accountOwner": "John Smith",
+    "bankName": "name",
+    "accountType": "Chequing",
+    "accessToken": "TEMP1",
+  },
+  {
+    "accountID": 654321,
+    "accountOwner": "John Smith",
+    "bankName": "RBC Royal Bank",
+    "accountType": "TFSA",
+    "accessToken": "TEMP2",
+  }
+]
+}
+```
+
+userData.json:
+```json
+{
+  "countryfilter": ["Canada","USA","Germany"],
+  "topicfilter":["technology","agriculture"],
+  "notes":["C:/path-to-note1","C:/path-to-note2","C:/path-to-note3"],
+}
+```
