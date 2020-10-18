@@ -37,5 +37,23 @@ System Architecture
 Persistent Storage details
 -one database one application setup
 
-
+Below are some examples of what the JSON files used to store the persistent data will look like:
+;;;
+{
+  "users":[
+    {
+      "username": "Steve105",
+      "path": "C:\Programs\bankecon\data\10928324\"
+    },
+    {
+      "username": "tempuser360",
+      "path": "C:\Programs\bankecon\data\34937823\"
+    },
+    {
+      "username": "Carl55",
+      "path": "C:\Programs\bankecon\data\95936728\"
+    }
+  ]
+}
+;;;
 
