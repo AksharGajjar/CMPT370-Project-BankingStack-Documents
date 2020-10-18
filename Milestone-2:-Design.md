@@ -134,6 +134,7 @@ userData.json:
 {
   "countryfilter": ["Canada","USA","Germany"],
   "topicfilter":["technology","agriculture"],
-  "notes":["C:/path-to-note1","C:/path-to-note2","C:/path-to-note3"],
+  "transactionNotes":["C:/path-to-tnote1","C:/path-to-tnote2","C:/path-to-tnote3"],
+  "financialnNotes":["C:/path-to-fnote1","C:/path-to-fnote2","C:/path-to-fnote3"],
 }
 ```
