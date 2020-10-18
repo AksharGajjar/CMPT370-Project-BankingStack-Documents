@@ -37,7 +37,9 @@ System Architecture
 Persistent Storage details
 -one database one application setup
 
-Below are some examples of what the JSON files used to store the persistent data will look like:
+Below are some examples of what the JSON files used to store the persistent data will look like.
+
+users.json:
 ```json
 {
   "users":[
@@ -57,3 +59,60 @@ Below are some examples of what the JSON files used to store the persistent data
 }
 ```
 
+institutions.json:
+```json
+{
+    "institutions": [
+        {
+            "country_codes": [
+                "CA"
+            ],
+            "has_mfa": true,
+            "input_spec": "fixed",
+            "institution_id": "ins_39",
+            "mfa": [
+                "code",
+                "list",
+                "questions",
+                "selections"
+            ],
+            "mfa_code_type": "numeric",
+            "name": "RBC Royal Bank",
+            "oauth": false,
+            "products": [
+                "assets",
+                "auth",
+                "balance",
+                "transactions",
+                "income",
+                "identity"
+            ],
+            "routing_numbers": []
+        },
+        {
+            "country_codes": [
+                "US"
+            ],
+            "has_mfa": true,
+            "input_spec": "fixed",
+            "institution_id": "ins_123",
+            "mfa": [
+                "code",
+                "list",
+                "questions",
+                "selections"
+            ],
+            "mfa_code_type": "numeric",
+            "name": "name",
+            "oauth": false,
+            "products": [
+                "assets",
+                "balance",
+                "transactions"
+            ],
+            "routing_numbers": []
+        },
+    ],
+    "request_id": "xxxxxxxxxxxxx"
+}
+```
