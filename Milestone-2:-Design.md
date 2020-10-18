@@ -38,7 +38,7 @@ Persistent Storage details
 -one database one application setup
 
 Below are some examples of what the JSON files used to store the persistent data will look like:
-;;;
+```json
 {
   "users":[
     {
@@ -55,5 +55,5 @@ Below are some examples of what the JSON files used to store the persistent data
     }
   ]
 }
-;;;
+```
 
