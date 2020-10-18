@@ -51,10 +51,7 @@ users.json:
       "username": "tempuser360",
       "path": "C:\Programs\bankecon\data\34937823\"
     },
-    {
-      "username": "Carl55",
-      "path": "C:\Programs\bankecon\data\95936728\"
-    }
+
   ]
 }
 ```
@@ -89,29 +86,7 @@ institutions.json:
             ],
             "routing_numbers": []
         },
-        {
-            "country_codes": [
-                "US"
-            ],
-            "has_mfa": true,
-            "input_spec": "fixed",
-            "institution_id": "ins_123",
-            "mfa": [
-                "code",
-                "list",
-                "questions",
-                "selections"
-            ],
-            "mfa_code_type": "numeric",
-            "name": "name",
-            "oauth": false,
-            "products": [
-                "assets",
-                "balance",
-                "transactions"
-            ],
-            "routing_numbers": []
-        },
+
     ],
     "request_id": "xxxxxxxxxxxxx"
 }
