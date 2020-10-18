@@ -37,6 +37,9 @@ System Architecture
 Persistent Storage details
 -one database one application setup
 
+Persistent file storage hierarchy diagram:
+
+
 Below are some examples of what the JSON files used to store the persistent data will look like.
 
 users.json:
