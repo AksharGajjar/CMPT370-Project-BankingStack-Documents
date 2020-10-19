@@ -43,10 +43,11 @@ In each user's directory are a series of json files containing data specific to 
 
 The only unencrypted file is the "institutions" json file which simply contains the information on each institution that the plaid API needs in order to set up its tokens, This file will be updated at run time to check if the institutions initially provided for by the program are still supported as well as to check if any of the PLAID connection data has been changed.
 
-Persistent file storage hierarchy diagram:
+**Persistent file storage hierarchy diagram:**
+
 ![cmpt370PersistantStorage2](uploads/b014efad12413868038584de0e46591d/cmpt370PersistantStorage2.png)
 
-Below are some examples of what the JSON files used to store the persistent data will look like.
+**JSON file examples:**
 
 users.json:
 ```json
