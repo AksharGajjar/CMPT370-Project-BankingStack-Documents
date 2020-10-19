@@ -166,8 +166,9 @@ userSubscriptions.json:
     {
       "company": "tempcompany1",
       "dollarAmount": 15,
-      "transactionAmount": 20,
-      "interval": "Monthly"
+      "interval": "Monthly",
+      "subscriptionPeriod": 10,
+      "startDate": "10/09/2020"
     },
 
   ]
