@@ -158,3 +158,18 @@ transactions.json:
   ]
 }
 ```
+
+userSubscriptions.json:
+```json
+{
+  "subscriptions": [
+    {
+      "company": "tempcompany1",
+      "dollarAmount": 15,
+      "transactionAmount": 20,
+      "interval": "Monthly"
+    },
+
+  ]
+}
+```
