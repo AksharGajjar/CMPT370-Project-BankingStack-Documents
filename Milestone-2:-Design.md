@@ -48,11 +48,11 @@ users.json:
   "users":[
     {
       "username": "Steve105",
-      "path": "C:\Programs\bankecon\data\10928324\"
+      "path": "C:\Programs\fintracker\data\10928324\"
     },
     {
       "username": "tempuser360",
-      "path": "C:\Programs\bankecon\data\34937823\"
+      "path": "C:\Programs\fintracker\data\34937823\"
     },
 
   ]
