@@ -1,4 +1,4 @@
-# Due Oct 19th
+# Milestone 2: Design
 
 # Storyboards
 
@@ -11,11 +11,15 @@ Storyboard for Use Case 1.0 - 1.3:
 ![20201018_195311](uploads/d106884d421ac0b4c526084a17f2f15a/20201018_195311.jpg)
 
 # Domain Models
+![UML_class_diagram](uploads/5c17384a92c99ce5cde637cca88e2ba6/UML_class__3_.png)
+
+The Paypal API class has not been elaborated upon because after some extensive research into the Paypal API we have realized that implementing the features we wish to have might not be possible via the API. Further investigation is being done on this matter and as of now, the PayPal feature has been moved to the could have features list.
 
 # System Architecture Details
 
-System Architecture
--Layered architecture style
+## System Architecture
+
+## UML Component Diagram
 
 # Interaction Diagrams
 
@@ -148,7 +152,7 @@ userData.json:
 transactionNotes.json:
 ```json
 {
-  "transactions: "[
+  "transactions": [
     {
       "accountID": 123456
       "data": [
