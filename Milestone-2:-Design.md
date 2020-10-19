@@ -138,7 +138,7 @@ userData.json:
 }
 ```
 
-transactions.json:
+transactionNotes.json:
 ```json
 {
   "transactions: "[
