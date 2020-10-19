@@ -134,7 +134,27 @@ userData.json:
 {
   "countryfilter": ["Canada","USA","Germany"],
   "topicfilter":["technology","agriculture"],
-  "transactionNotes":["C:/path-to-tnote1","C:/path-to-tnote2","C:/path-to-tnote3"],
   "financialnNotes":["C:/path-to-fnote1","C:/path-to-fnote2","C:/path-to-fnote3"],
+}
+```
+
+transactions.json:
+```json
+{
+  "transactions: "[
+    {
+      "accountID": 123456
+      "data": [
+        {
+          "tID": "transaction1"
+          "noteFile": "path-to-tnote1"
+        },
+        {
+          "tID": "transaction2"
+          "noteFile": "path-to-tnote2"
+        },
+      ]
+    },
+  ]
 }
 ```
