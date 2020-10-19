@@ -8,7 +8,7 @@ Storyboard for Use Case 1.0 - 1.3:
 - 1.2 - Check the balance in PayPal
 - 1.3 - Create Financial Plan/Access news articles and financial literacy material
 
-![20201017_163748](uploads/afd4a43d511e2b36865b84cf19f2a9ac/20201017_163748.jpg)
+![20201018_195311](uploads/d106884d421ac0b4c526084a17f2f15a/20201018_195311.jpg)
 
 # Domain Models
 
