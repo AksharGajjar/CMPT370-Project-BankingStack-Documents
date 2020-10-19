@@ -39,7 +39,7 @@ Persistent Storage details
 
 The persistent storage for the  finance tracker program is based on a hierarchy of encrypted and unencrypted json files. The encrypted files can be broken down into two categories, general encryption and user specific encryption. Files with general encryption contain less sensitive or administrative data and are encrypted/ decrypted using a general key that is known by the application. User specific encryption is for any file containing sensitive user information such as an API access token, this data is encrypted with a user specific key which can only be accessed with the general application key. The structure in the json files is that the "users.json" file which contains all the users and their specific keys and their associated directories will be generally encrypted. Both the key and the users directory name are unique randomly generated values.
 
-In each user's directory are a series of json files containing data specific to that user that can only be accessed with that users specific key. 
+In each user's directory are a series of json files containing data specific to that user that can only be accessed with that users specific key as well as txt files containing user notes created through the programs provided interface. The json files are, "userCredentials.json", "accountData.json", "userData.json" and "userSubscriptions.json" in addition there is a directory for the txt files called notes.
 
 Persistent file storage hierarchy diagram:
 ![cmpt370PersistantStorage2](uploads/b014efad12413868038584de0e46591d/cmpt370PersistantStorage2.png)
