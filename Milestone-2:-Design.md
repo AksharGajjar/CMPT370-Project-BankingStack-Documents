@@ -11,13 +11,34 @@ Storyboard for Use Case 1.0 - 1.3:
 ![20201018_195311](uploads/d106884d421ac0b4c526084a17f2f15a/20201018_195311.jpg)
 
 # Domain Models
-![UML_class_diagram](uploads/5c17384a92c99ce5cde637cca88e2ba6/UML_class__3_.png)
+![UML_class__6_](uploads/d22d1d11d16121f2b1599de81e5cabe4/UML_class__6_.png)
 
 The Paypal API class has not been elaborated upon because after some extensive research into the Paypal API we have realized that implementing the features we wish to have might not be possible via the API. Further investigation is being done on this matter and as of now, the PayPal feature has been moved to the could have features list.
+
+The details of the GUI class are not presented since we are still in the process of figuring out the exact inner workings of the GUI.
 
 # System Architecture Details
 
 ## System Architecture
+In order to implement our system, we decided to go with layered system architecture. The main reasoning behind this choice is to ensure that the API functions and the inner workings of the system are obfuscated and hidden from the user. We also believe that this system approach meshes well with our design because in some sense the APIs which handle the bank connections and data retrievals could be considered the core of our system.
+
+As you can see in the class diagram there are three different colours of classes. Each colour essentially represents a layer. The blue layer consists of the APIs. This is the innermost layer of the system. Next up there are the green classes which represent the middle layer of the system. Lastly, there are the red classes which represent the outermost layer. 
+
+Let us start from the outermost layer. This layer consists of the system, person, and financial_plan class. In this layer the classes essentially account for all the functionalities that the user has access to. Things like add/remove account, register with the platform, create a financial plan, etc. are presented here. The purpose of these classes is to contact the classes in the middle layer to reach the final api layer. The subscriptions class is also part of this layer and it provides the users the ability to add, edit, and delete their subscriptions so they can track that information using our platform. This layer also contains a GUI class which will handle the displaying of all the necessary information that will be fetched from the other top layer classes.
+
+The middle layer provides the connection between the outer and innermost layers. This layer consists classes such as notes, bank account, PayPal account, transactions, balance, etc. The main job of this layer is to breakdown the different user functions into several distinct categories so then those categorical functions can connect with the api efficiently. This allows the program to only obtain data requested by the user without fetching unnecessary data. For instance, the account class is broken up into bank account and PayPal account. Furthermore, the bank account class is broken down into transactions and balance. 
+
+Finally, we have the innermost layer of the system which consists of the API classes. This class is the furthest from users. This class will essentially be accessed by the specific middle layer classes to obtain the necessary data. For instance, you can see that the plaid API connects to the account, bank account, transactions, and balance classes. That is because the account class has an access token variable which is obtained from plaid api using get_access_token() and also the fetch_available_institutions(), and create_bank_account() also communicate with the plaid api. The main reason the Plaid api class connects to the bank account class is to authenticate the user. Transactions and balance classes connect to the plaid api to get the respective data. Similarly, the PayPal api also connects to the PayPal account and accounts class so the access token can be obtained and also the balance and transactions can be obtained. There is also the news api which exists in this layer. Unlike the other two APIs this one is fairly straight forward.
+
+Component Descriptions:
+-	System: This class is responsible for creating the new user and creating the system encryption key . This class will communicate with the GUI class to display the  corresponding windows for registration, login, etc.
+-	Person: This class is responsible for the validation, and json file creation for a user profile. This class validates the user by sending them a verification email. It also handles the update user information and the user secret key generation. This user secret key is used to encrypt this particular user’s data. It also has functionality to add accounts for a specific user. It also allows user to create a financial plan. Financial plan creation is essentially the user specifying his/her news filter preferences and also gives them an ability to add notes. This class also communicates with the GUI class.
+-	Subscription: This class is responsible for managing user subscriptions and also is responsible for creating the correct json storage files for the subscriptions. It also connects with the GUI to display the corresponding information when necessary.
+-	bank_account: This class authenticates the users bank account and it also connects with the balance and transaction classes to get that information via functions such as get_transactions, refresh_transactions, and get_balance.
+-	Plaid API: This class is responsible for obtaining an access_token for a specific bank account which is why it connects to account class. It also provides authentication, transactions, and balance to the bank_account, transactions, and balance classes.
+-	The rest of the classes are fairly simple and functions are easy to determine based on the UML class diagram.
+
+
 
 ## UML Component Diagram
 
