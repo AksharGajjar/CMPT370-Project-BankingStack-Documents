@@ -44,7 +44,7 @@ Component Descriptions:
 
 # Interaction Diagrams
 
-**Sequence Diagrams**
+# Sequence Diagrams
 
 ![SequnceDiagramAddBankV1](uploads/07f5297a61d8b8ab7f2eee746140548f/SequnceDiagramAddBankV1.jpg)
 
