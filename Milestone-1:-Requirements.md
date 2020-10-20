@@ -24,12 +24,12 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 - Ability to check account balance.
 - Encryption to store and manage sensitive user credentials.
 - Ability to view the last 12 months of transaction activity for connected accounts.
-- Ability to connect to and manage PayPal account.
 - Users should only have to log in to each of their bank accounts once using the application.
 - Transaction and balance data should update when the user logs in and allow on-demand refreshes afterward.
 - APIs should be obfuscated from the user.
 - Load time for pages must be less than 2 seconds.
 - The program should run off of an executable.
+- Displays user-customized news feed.
 
 **Should Have Features**
 
@@ -44,7 +44,7 @@ In order to achieve all of the aforementioned functionalities, we will be using 
 - Ability to track additional assets such as gold, real estate, vehicle(s), Crypto, etc.
 - Ability to pay bills and transfer money.
 - Add messaging functionality between users that share bank accounts.
-- Displays user-customized news feed.
+- Ability to connect to and manage PayPal account.
 
 ## List of Actors, Scenarios, and Use Cases
 
