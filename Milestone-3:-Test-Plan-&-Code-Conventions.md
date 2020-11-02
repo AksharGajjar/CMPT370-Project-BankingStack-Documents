@@ -63,7 +63,7 @@ Here is some example for the google format :
 
 **Naming**
 
-- Function will be added underscore at the back of the function name if it requires testing, e.g. sampleFunction_().
+- Function name will be separate via capitalization, e.g. sampleFunction().
 - Variable name will be separated via underscore without any capitalization, e.g. sample_variable.
 
 **If-else statement Formatting**
