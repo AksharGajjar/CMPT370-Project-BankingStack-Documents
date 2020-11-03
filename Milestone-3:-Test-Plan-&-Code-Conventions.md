@@ -81,15 +81,15 @@ In this section, we will discuss specifics regarding how specific implementation
 | E2E#3  | End-to-End | Login to managing subscriptions | login with user credentials, go to the subscriptions page, add a subscription by providing payment frequency, start date, subscription amount, edit an existing subscription, delete a subscription | username, password, subscription amount, start date, payment frequency | User can successfully log in, add subscription, edit and delete subscriptions |
 | E2E#4  | End-to-End | Login to managing financial plan | login with user credentials, go to the financial plans page, add a new note by providing title and note body, edit an existing note, delete a note, add a new news filter, and edit the existing filters | username, password, note content, note title, news filter options  | User can successfully log in, add a new note, edit and delete existing notes, add news filters from a selection, and edit existing filters |
 
-| IT#1   | Integration Test | Plaid API auxiliary function testing |    | cell   | cell   |
+| IT#1   | Integration Test | Plaid API auxiliary function testing | link token, institution date(dictionary) | cell | cell |
 
 | IT#2   | Integration Test | Plaid API Account Testing | cell   | cell   | cell   |
 
-| IT#3   | Integration Test | User login and register testing  | cell   | cell   | cell   |
+| IT#3   | Integration Test | User login and register testing  | Pass the user data to the Register function, then call the login function with the login information | username, password, email, name, user_id  | On a successful test login will return the user_id   |
 
-| IT#4   | Integration Test | Subscriptions testing   | cell   | cell   | cell   |
+| IT#4   | Integration Test | Subscriptions testing   | cell   | subscription amount, start date, payment frequency   | cell   |
 
-| IT#5   | Integration Test | Financial plan testing  | cell   | cell   | cell   |
+| IT#5   | Integration Test | Financial plan testing  | cell   | note content, note title, news filter options   | cell   |
 
 **Test Procedures**
 
