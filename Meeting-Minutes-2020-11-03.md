@@ -6,4 +6,4 @@ Agenda:
 
 Meeting Minutes:
 
-[cmpt370_group9_meeting_03_11_2020.docx](uploads/d60bf35f55b18bb06c8672bb0147b5d5/cmpt370_group9_meeting_03_11_2020.docx)
+[cmpt370_group9_meeting_03_11_2020.docx](uploads/6c9a50a54c67e32d950a1aab4a0f04b2/cmpt370_group9_meeting_03_11_2020.docx)
