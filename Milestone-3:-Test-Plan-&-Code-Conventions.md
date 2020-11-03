@@ -1,4 +1,42 @@
 # Due Oct 30th
+## Quality Assurance Strategies
+Technical quality assurance focus will be on largely correctness, reliability, and capability, secondary focus will be on making sure that performance is within the acceptable bounds set in the system requirements. The tertiary focus will be on ensuring that the system has a reasonable degree of maintainability for ease of development.
+
+Tests will start with unit tests on the most basic functions such as createJsonFile or createBankAccount. All of the low-level functions which will be called by higher-level functions will be unit tested to ensure code correctness and capability. Any low-level functions that pass data to one another will then go through integration testing before being implemented together in the higher-level function, That function will then be integration tested to ensure that the data is passed properly.
+
+Avoid nesting functions to increase to better facilitate unit test and integration test, an example being, functions like userJsonCreation should have their data passed to the create jsonFile instead of calling it 
+
+## Testing Outline/Plan
+**Test Strategy**
+
+**Test Plan**
+- End to End Testing
+- Integration Testing
+- Unit Testing
+
+**Test Case Design**
+
+**Test Procedures**
+
+
+## Proof of concept
+**Introduction**
+
+To demonstrate our testing methodologies and approach we decided to provide unit testing code for three separate functions that will be part of our system. These are trivial functions and the sole purpose of this is to demonstrate our general approach. 
+
+**Function Description**
+
+The three functions we decided to test were register, encryption, and institutionCheck. 
+- The register function essentially collects user credentials, verifies them and stores them into a json file.
+- The encryption function takes in data and a key and uses fernet encryption along with the key to encrypt the data.
+- The institution function takes in a string query and checks whether the particular institution is available via the plaid API.
+
+**Instructions**
+
+The code for the three functions can be found in the exampleTests branch of the repository. A readme is also included outlining steps required to run the test cases. Running the test cases will generate a log which will include the results of the tests.
+
+
+
 
 ## Code Convention
 **Language**
@@ -104,5 +142,3 @@ Example:
         # single whitespace between the symbols and parameters.
         # Tab was used to create the whitespace in front of sum_result.
         sum_result = param1 + param2 + param3 + param4 
-
-## Test Plan
