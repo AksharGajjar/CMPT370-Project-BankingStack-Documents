@@ -21,9 +21,20 @@ While the top layer functions are being tested, one important factor to consider
 
 *Testing Tools*
 
-We will mainly be using pytest and pytest-mock as our testing tools. We decided against using any hooks or any other harnesses because the scope of our project not being too large. We believe the time spent configuring commit hooks and harnesses would be better utilized in testing and building the system. In order to ensure that the code being pushed onto the repo is safe, we have instead devised a custom harness that we will all utilize. We have decided that before a group member wishes to puch code onto the repo they must run all unit tests and if the member wishes they can also run the integration tests related to their subsystem. They must append the resulting log along with their merge request. This log and the code being merged will then be verified by at least two other members before it is approved for the merge. The reason behind doing this decision is because not having commit hooks gives us some flexibility.  
+- pytest
+- pytest-mock 
 
 **Test Plan**
+
+NOTE: This document for Milestone 3 only consists of testing that relates to the minimum viable product (MVP). In other words, most of the test cases presented here are only relating to the must-have features. It's extremely difficult to outline a completely accurate test plan since there will be changes that might occur when building the project. Our main goal here is to showcase a thorough understanding of testing principles and to showcase that a concrete plan has been put in place to execute successful testing. There might be some test cases missing and there might be some functions that get added or removed during the building process. The newly added functions will be tested using the testing methodologies outlined in this document.
+
+*Testing Environment*
+
+Our testing environment will be pytest and pytest-mock. We are using python for our programming language and we found that the pytest fits our needs the best and also many group members are already familiar with the pytest functionality.
+
+*Testing Order*
+
+The order of testing will be based on the implementation process. Because we will be following a top-down approach the unit tests for the top-level functions will be the first to be implemented followed by integration tests for top-level functions such as subscription functions. Lastly, we will test the end-to-end functions. 
 
 *End to End Testing*
 
@@ -46,10 +57,24 @@ Similarly, the Integration tests will consist of testing subsystems. Our integra
 
 *Unit Testing*
 
+For unit testing, our plan is to essentially test each and every function in our system. The sample test cases we have provided in the repository are unit tests and will give you some indication as to how we plan on doing our unit tests. One important thing to keep in mind is that the example tests don't use any mocks or any harnesses because they are just a sample. Our actual test cases will be much more in-depth and will have more in-depth testing. Here are some examples of unit tests.
+
+- unit test #1: register() (key feature)
+- unit test #2: login() (key feature)
+- unit test #3: userJsonCreation (storage system testing. Test to see if a file is created properly by checking the categories stored in the file.)
+- unit test #4: addAccount() (key feature. Works by checking Plaid API JSON response)
+- unit test #5: removeAccount()
+- unit test #6: accountJsonCreation (storage system testing. Verifies proper account information is stored)
+- unit test #7: getTransaction() (key feature, Test by verifying the json response from API)
+- unit test #8: getBalance() (key feature, Test by verifying the json response from API)
+- unit test #9: addNewsFilters() (key feature, test by checking news API response and verifying the filters are yielding valid responses)
+- unit test #10: createNote() (key feature)
+
 **Test Case Design**
 
 **Test Procedures**
 
+Since we will mainly be using pytest and pytest-mock as our testing tools. We decided against using any hooks or any other harnesses because the scope of our project not being too large. We believe the time spent configuring commit hooks and harnesses would be better utilized in testing and building the system. In order to ensure that the code being pushed onto the repo is safe, we have instead devised a custom harness that we will all utilize. We have decided that before a group member wishes to push code onto the repo they must run all unit tests and if the member wishes they can also run the integration tests related to their subsystem. They must append the resulting log along with their merge request. This log and the code being merged will then be verified by at least two other members before it is approved for the merge. The reason behind doing this decision is because not having commit hooks gives us some flexibility. 
 
 ## Proof of concept
 **Introduction**
@@ -65,7 +90,7 @@ The three functions we decided to test were register, encryption, and institutio
 
 **Instructions**
 
-The code for the three functions can be found in the exampleTests branch of the repository. A readme is also included outlining steps required to run the test cases. Running the test cases will generate a log which will include the results of the tests.
+The code for the three functions can be found in the exampleTests branch of the repository. A readme is also included outlining steps required to run the test cases. Running the test cases will generate a log that will include the results of the tests.
 
 
 
