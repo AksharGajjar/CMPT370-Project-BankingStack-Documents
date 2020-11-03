@@ -91,9 +91,9 @@ In this section, we will discuss specifics regarding how specific implementation
 | UT#5 | Unit Test | removeAccount() | Test by entering account data for an account that doesn't exist. Enter proper account credentials. Test by mismatching input data for instance account_owner doesn't match the actual account. | account_name, access_token, account_owner | If the account credentials are invalidated and deleted from files when the provided info is valid then it's successful. If an exception is thrown when false or mismatched data is provided then the test is successful. |
 | UT#6 | Unit Test | accountFileCreation() | Obtain data from addAccount(), start parsing data, creates a modified JSON object. Check JSON object formatting and check the validity of the format. Once the file is created check the file name, once data is added to the file verify that the file is not empty. | filename, access_token, account_name, account_owner | Successful if JSON file is created appropriately. Successful if it handles errors successfully. | 
 | UT#7 | Unit Test | getTransaction() | Provide an incorrect time range, provide incorrect access_token, provide correct access_token and time range. | access_token, start_date, end_date | If the exceptions from invalid ranges are handled and if the data is correct then the JSON object containing transactions is obtained. If that JSON object is valid it's successful. |
-| UT#8 | Unit Test | getBalance() |
-| UT#9 | Unit Test | addNewsFilters() |
-
+| UT#8 | Unit Test | getBalance() | provide false access_token, provide false account_owner, provide correct information. | account_owner, and access_token | If the function handles erroneous data correctly and obtains the balance data when correct info is provided then it's successful. |
+| UT#9 | Unit Test | addNewsFilters() | add each possible filter individually to generate an individual test case for each filter. Add collections of filters to check multiple filter functionality, add all filters to check support for all filters. | news_filters | Successful if each individual filter is applied successfully and multiple filters and all filters cases are also handled successfully. |
+| UT#10 | Unit Test | createNote() | Try to create with no title, try with no subject, try to put special characters in the title. | title, date, note_content, note_author | Successful if all invalid and valid cases are handled safely and correctly. |
 
 **Test Procedures**
 
