@@ -79,12 +79,11 @@ In this section, we will discuss specifics regarding how specific implementation
 | E2E#1  | End-to-End | Registering to viewing transactions | Register user by providing necessary credentials, log in with those credentials, go to accounts page, add a new account, provide account details, once the account is connected to, view transactions, add a note to a specific transaction. | username, name, password, email, bank account id and password, access_token   | User can successfully register, login, add an account, and attach a note to a transaction |
 | E2E#2  | End-to-End | Login to viewing balance | login with user credentials, go to accounts page, add a new account, provide account details, once the account is connected to, view balance and overdraft limit | username, password, bank account id and password, access_token | User can successfully log in, add account and view account balance and overdraft limit |
 | E2E#3  | End-to-End | Login to managing subscriptions | login with user credentials, go to the subscriptions page, add a subscription by providing payment frequency, start date, subscription amount, edit an existing subscription, delete a subscription | username, password, subscription amount, start date, payment frequency | User can successfully log in, add subscription, edit and delete subscriptions |
+| E2E#4  | End-to-End | Login to managing financial plan | login with user credentials, go to the financial plans page, add a new note by providing title and note body, edit an existing note, delete a note, add a new news filter, and edit the existing filters | username, password, note content, note title, news filter options  | User can successfully log in, add a new note, edit and delete existing notes, add news filters from a selection, and edit existing filters |
 
-| E2E#4  | End-to-End | Login to managing financial plan | cell   | cell   | cell   |
+| IT#1   | Integration Test | Plaid API auxiliary function testing |    | cell   | cell   |
 
-| IT#1   | Integration Test | Plaid API auxiliary function testing   |    | cell   | cell   |
-
-| IT#2   | Integration Test | Plaid API Account Testing    | cell   | cell   | cell   |
+| IT#2   | Integration Test | Plaid API Account Testing | cell   | cell   | cell   |
 
 | IT#3   | Integration Test | User login and register testing  | cell   | cell   | cell   |
 
