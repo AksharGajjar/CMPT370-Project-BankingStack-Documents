@@ -87,7 +87,7 @@ In this section, we will discuss specifics regarding how specific implementation
 
 | IT#3   | Integration Test | User login and register testing  | Pass the user data to the Register function, then call the login function with the login information | username, password, email, name, user_id  | On a successful test login will return the user_id   |
 
-| IT#4   | Integration Test | Subscriptions testing   | cell   | subscription amount, start date, payment frequency   | cell   |
+| IT#4   | Integration Test | Subscriptions testing   | Call the addSubscription function, then pass the data json data to the fileCreation function  | subscription amount, start date, payment frequency, company, list of subscriptions   | addSubscription function should return a subscription json and pass it to the   |
 
 | IT#5   | Integration Test | Financial plan testing  | cell   | note content, note title, news filter options   | cell   |
 
