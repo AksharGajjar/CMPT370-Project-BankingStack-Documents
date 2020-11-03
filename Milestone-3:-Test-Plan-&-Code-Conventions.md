@@ -40,7 +40,7 @@ The order of testing will be based on the implementation process. Because we wil
 
 Our system will mostly consist of unit tests and integration tests. There will be very few end-to-end tests that will essentially test the key user flows that a typical user will take in our system. The end-to-end tests will run through several components of our system to achieve some end goal. Some examples of end-to-end tests that our system will contain are:
 
-- Flow #1: Log in, connect a bank account, view transactions, add a note to a transaction.
+- Flow #1: Register, log in, connect a bank account, view transactions, add a note to a transaction.
 - Flow #2: Log in, open bank account, view account balance, view overdraft limit.
 - Flow #3: Log in, access subscriptions, add a subscription, edit a subscription, delete a subscription
 - Flow #4: Log in, access financial plan, add a new note to a financial plan, edit an existing note, delete a note, and edit news filters.
@@ -74,18 +74,23 @@ For unit testing, our plan is to essentially test each and every function in our
 
 In this section, we will discuss specifics regarding how specific implementations will be tested. We will discuss both positive and negative testing for test cases where it's applicable. 
 
-| Test Case ID | Test Scenario | Test Steps | Test Data | Expected Results |
-| ------ | ------ | ------ | ------ | ------ |
-| E2E#1  |    | cell   | cell   | cell   |
-| E2E#2  |    | cell   | cell   | cell   |
-| E2E#3  |    | cell   | cell   | cell   |
-| E2E#4  |    | cell   | cell   | cell   |
-| E2E#5  |    | cell   | cell   | cell   |
-| IT#1   | Plaid API auxiliary function testing   |    | cell   | cell   |
-| IT#2   | Plaid API Account Testing    | cell   | cell   | cell   |
-| IT#3   | User login and register testing  | cell   | cell   | cell   |
-| IT#4   | Subscriptions testing   | cell   | cell   | cell   |
-| IT#5   | Financial plan testing  | cell   | cell   | cell   |
+| Test Case ID | Test Type | Test Scenario | Test Steps | Test Data | Expected Results |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| E2E#1  | End-to-End | Registering to viewing transactions | Register user by providing necessary credentials, log in with those credentials, go to accounts page, add a new account, provide account details, once the account is connected to, view transactions, add a note to a specific transaction. | username, name, password, email, bank account id and password, access_token   | User can successfully register, login, add an account, and attach a note to a transaction |
+| E2E#2  | End-to-End | Login to viewing balance | login with user credentials, go to accounts page, add a new account, provide account details, once the account is connected to, view balance and overdraft limit | username, password, bank account id and password, access_token | User can successfully log in, add account and view account balance and overdraft limit |
+| E2E#3  | End-to-End | Login to managing subscriptions | login with user credentials, go to the subscriptions page, add a subscription by providing payment frequency, start date, subscription amount, edit an existing subscription, delete a subscription | username, password, subscription amount, start date, payment frequency | User can successfully log in, add subscription, edit and delete subscriptions |
+
+| E2E#4  | End-to-End | Login to managing financial plan | cell   | cell   | cell   |
+
+| IT#1   | Integration Test | Plaid API auxiliary function testing   |    | cell   | cell   |
+
+| IT#2   | Integration Test | Plaid API Account Testing    | cell   | cell   | cell   |
+
+| IT#3   | Integration Test | User login and register testing  | cell   | cell   | cell   |
+
+| IT#4   | Integration Test | Subscriptions testing   | cell   | cell   | cell   |
+
+| IT#5   | Integration Test | Financial plan testing  | cell   | cell   | cell   |
 
 **Test Procedures**
 
