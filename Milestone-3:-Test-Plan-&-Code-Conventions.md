@@ -76,14 +76,16 @@ In this section, we will discuss specifics regarding how specific implementation
 
 | Test Case ID | Test Scenario | Test Steps | Test Data | Expected Results |
 | ------ | ------ | ------ | ------ | ------ |
-
-| E2E#1 | cell | cell | cell | cell |
-| E2E#2 | cell | cell | cell | cell |
-| E2E#3 | cell | cell | cell | cell |
-| E2E#4 | cell | cell | cell | cell |
-| E2E#5 | cell | cell | cell | cell |
-| IT#1 | cell | cell | cell | cell |
-
+| E2E#1  |    | cell   | cell   | cell   |
+| E2E#2  |    | cell   | cell   | cell   |
+| E2E#3  |    | cell   | cell   | cell   |
+| E2E#4  |    | cell   | cell   | cell   |
+| E2E#5  |    | cell   | cell   | cell   |
+| IT#1   | Plaid API auxiliary function testing   |    | cell   | cell   |
+| IT#2   | Plaid API Account Testing    | cell   | cell   | cell   |
+| IT#3   | User login and register testing  | cell   | cell   | cell   |
+| IT#4   | Subscriptions testing   | cell   | cell   | cell   |
+| IT#5   | Financial plan testing  | cell   | cell   | cell   |
 
 **Test Procedures**
 
