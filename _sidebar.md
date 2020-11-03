@@ -31,6 +31,8 @@
 
 [2020-10-27](Meeting Minutes 2020-10-27)
 
+[2020-11-03](Meeting Minutes 2020-11-03)
+
 ---
 
 #### [Sidebar](_sidebar)
