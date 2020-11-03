@@ -9,6 +9,36 @@ Avoid nesting functions to increase to better facilitate unit test and integrati
 ## Testing Outline/Plan
 **Test Strategy**
 
+Our testing strategy closely resembles the layered architecture approach which we chose for designing the system. Essentially, there are three main layers to our system, and each function is categorized based on these levels. The top-level roughly includes functions like register, login, GUI interfaces, add/remove account credentials, subscriptions, add/remove notes, creating user JSON files, and news filter functions. All of these functions don't directly connect to the APIs and do connect with the GUI so these are considered top-level functions. Similarly, there are mid-level and low-level functions that do communicate with APIs and do handle much of the back-end functionalities. 
+
+*Build the test cases first*
+
+One of the key aspects of our strategy is that we plan on building all of our test cases before we start coding the system. This will ensure that we don't get feature creep in our development cycle as we will know exactly what we need to build to make sure our test cases pass.
+
+*Skeleton structures*
+
+While the top layer functions are being tested, one important factor to consider is the fact that these functions depend on the lid level functions, and to address this issue we will be using mid-level skeleton functions that will connect to top-level functions and mimic some behavior to ensure that the top-level functions can be tested appropriately. We will also use mocks to test certain functions to ensure faster testing and to ensure that our API call traffic is minimized.
+
+*
+
+*Types of tests*
+
+Our system will mostly consist of unit tests and integration tests. There will be very few end-to-end tests that will essentially test the key user flows that a typical user will take in our system. The end-to-end tests will run through several components of our system to achieve some end goal. Some examples of end-to-end tests that our system will contain are:
+
+- Flow #1: Log in, connect a bank account, view transactions, add a note to a transaction.
+- Flow #2: Log in, open bank account, view account balance, view overdraft limit.
+- Flow #3: Log in, access subscriptions, add a subscription, edit a subscription, delete a subscription
+- Flow #4: Log in, access financial plan, add a new note to a financial plan, edit an existing note, delete a note, and edit news filters.
+
+Similarly, the Integration tests will consist of testing subsystems. Our integration test will be classified based on the functionalities of the functions. For instance functions such as createClient(), getBalance(), getTransactions(), getInstitutions(), getAccesstoken(), and getLinkToken() all relate to the plaid API and so these functions will be grouped together in the following manner:
+
+- Integration Test #1: API auxiliary functions testing. createClient(), getLinkToken() and getInstitutions() will be tested in conjunction since getLinkToken and getInstitutions will utilize the createClient function from the Plain API python library.
+- Integration Test #2: Account Testing. addAccount(), getBalance(), getTransactions(), and getAccessToken() will be tested in conjunction because the access token obtained form API will be required for both getBalance(), and getTransactions().
+- Integration Test #3: User login and register testing. login(), register(), and createUserJson() will be tested together since all three depend on each other. 
+- Integration Test #4: Subscriptions testing. createSubscription(), editSubscription(), deleteSubscription().
+- Integration Test #5: Financial plan testing. createNote(), editNote(), deleteNote(), addNewFilter(), editNewsFilters().
+
+
 **Test Plan**
 - End to End Testing
 - Integration Testing
