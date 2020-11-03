@@ -72,7 +72,17 @@ For unit testing, our plan is to essentially test each and every function in our
 
 **Test Case Design**
 
-In this section 
+In this section, we will discuss specifics regarding how specific implementations will be tested. We will discuss both positive and negative testing for test cases where it's applicable. 
+
+| Test Case ID | Test Scenario | Test Steps | Test Data | Expected Results |
+| ------ | ------ | ------ | ------ | ------ |
+
+| E2E#1 | cell | cell | cell | cell |
+| E2E#2 | cell | cell | cell | cell |
+| E2E#3 | cell | cell | cell | cell |
+| E2E#4 | cell | cell | cell | cell |
+| E2E#5 | cell | cell | cell | cell |
+| IT#1 | cell | cell | cell | cell |
 
 
 **Test Procedures**
