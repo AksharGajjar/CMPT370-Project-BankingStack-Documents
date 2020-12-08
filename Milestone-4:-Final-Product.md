@@ -247,59 +247,7 @@ The entire visual design of our project varies from our initial design storyboar
 ### UML
 We have some of the Class diagrams from our system however because most of our system is not in terms of classes we didn't get time to go back and manually create an updated UML diagram. 
 
-+-------------------+       +-------------------------+       +--------------------+
-|   accountBalance  |       |     tokenAccountInfo    |       | accountTransaction |
-|-------------------|       |-------------------------|       |--------------------|
-| account_id        |       | consent_expiration_time |       | account_id         |
-| account_name      |       | institution_id          |       | amount             |
-| account_number    |       | last_failed_update      |       | category           |
-| account_subtype   |       | last_successful_update  |       | currency_code      |
-| account_type      |       | raw_data                |       | date               |
-| balance_available |       |-------------------------|       | description        |
-| balance_current   |       | __init__                |       | merchant_name      |
-| balance_limit     |       | __str__                 |       | raw_data           |
-| currency_code     |       +-------------------------+       | status_pending     |
-| raw_data          |                                         | transaction_id     |
-|-------------------|                                         |--------------------|
-| __init__          |                                         | __init__           |
-| __str__           |                                         | __str__            |
-+-------------------+                                         | to_json            |
-                                                              +--------------------+
-
-
-+-------------------------------+       +-----------------+
-|       institutionsStatus      |       | serverDataStore |
-|-------------------------------|       |-----------------|
-| available_products            |       | plaid_response  |
-| institution_id                |       | server_params   |
-| institution_item_login_status |       |-----------------|                     
-| raw_data                      |       | __init__        |                     
-| transactions_status           |       +-----------------+                     
-|-------------------------------|                                               
-| __init__                      |                                               
-+-------------------------------+  
-
-+------------------------+
-| BaseHTTPRequestHandler |
-|------------------------|
-|       None             |
-+------------------------+
-        .                                      
-       /_\                                     
-        |                                      
-        |                                                                
-+-----------------+                            
-| plaidHTTPServer |                            
-|-----------------|                            
-| server_params   |  ---->  [ json.loads ]     
-|-----------------|                            
-| __init__        |  ---->  [ serverDataStore ]
-| do_GET          |                            
-| do_POST         |                            
-| fileServe       |                            
-| log_message     |                            
-| send404Error    |                            
-+-----------------+ 
+![sdfsdfdsfsdfsf](uploads/ff597df2942841ddec0e0d3dac81d83e/sdfsdfdsfsdfsf.JPG)
 
 ### Persistent Storage Details
 ![temp](uploads/abdf6131b05d40d09a008488ed14ccc1/temp.png)
@@ -331,4 +279,4 @@ Verifying user registration via an email verification was a planned feature and 
 At the moment none of our tests are runnable. This is because of the drastic changes we made to the code in order to implement a GUI. The main reason behind this error is the fact we didn’t update the tests as the code changed. In hindsight we should have written tests as we developed code instead of creating tests at an early stage.
 
 Transaction viewing is finicky
-- After linking a new account sometimes the transactions viewing doesn't work. The issue is caused by the way appJar handles frames and subwindows. This is one of the bad parts of appJar
+- After linking a new account then you can view transaction once and if you try to view it again it will crash. The issue is caused by the way appJar handles frames and subwindows. This is one of the bad parts of appJar. The way to get around this is to just restart the program each time you view transactions.
