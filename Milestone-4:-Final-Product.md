@@ -70,6 +70,98 @@ The rest of the GUI is fairly straightforward. However, we have attached some sc
 - The period input under add new subscriptions can be any integer
 - In order to delete or edit a subscription you will need its ID which you can find in the table by clicking on the view subscriptions button.
 
+Login/Register Page
+
+![Login/Register Page](uploads/8b2842fb7edb534553da8721aa3d1dbf/1.JPG)
+
+Register Page
+
+![Register Page](uploads/0ef295849ea5b79389abc7f18ced355a/2.JPG)
+
+Login Page
+
+![3](uploads/f7f69f4df55420677110b69fe4f052ec/3.JPG)
+
+Home Page
+
+![4](uploads/2925d3eded6b43026d2618f79176383c/4.JPG)
+
+Plaid Web Link
+
+![4.1](uploads/998542d4de050057c9b367aa2912b75e/4.1.JPG)
+
+Plaid Bank login info page
+
+![4.2](uploads/9e5e9c664194a590d90483a19c3bc5fa/4.2.JPG)
+
+Plaid Successful Link Page
+
+![4.3](uploads/9640e1975da38bcaa3d3d3bd36eddd6b/4.3.JPG)
+
+Accounts Page
+
+![5](uploads/057b420dcbf5dafaf412626a7291bce9/5.JPG)
+
+Account Balances Page
+
+![6](uploads/06435564991d410bdd5c70ec32d69204/6.JPG)
+
+Transactions settings Page
+
+![7](uploads/10a7c5232d49ca86fb1c7f522a7d1251/7.JPG)
+
+Transactions List Page
+
+![8](uploads/99fff92a69455cbc494daa3bf7841d56/8.JPG)
+
+Unlink account success prompt
+
+![9](uploads/6e437aa16179c86e21afb1502f037272/9.JPG)
+
+Financial Plan / Notes Main Page
+
+![16](uploads/71f0df47faf326d8b56073914f29cb28/16.JPG)
+
+Add Note Page
+
+![10](uploads/a9768be8cf5889326d77cb950e3b95ea/10.JPG)
+
+Edit Note Page
+
+![10.1](uploads/e712bcbe79b4bf938991035ef733e3a1/10.1.JPG)
+
+Delete Note Page
+
+![17](uploads/5ffeaee93b09958f9d20a62fccddf8ad/17.JPG)
+
+Add News Filter
+
+![18](uploads/effd3b97f73c7c571d3443cacd3abaa7/18.JPG)
+
+Select article to save
+
+![19](uploads/deb6129c4fe0c962fe5546a17a109504/19.JPG)
+
+Subscriptions Main Page
+
+![11](uploads/df174487337a47c6bbfca4a9f37645b3/11.JPG)
+
+Add Subscriptions Page
+
+![12](uploads/71ad29d581ce131d4cfc5d5943bcd03c/12.JPG)
+
+List Subscriptions
+
+![13](uploads/60498ea9ed9fc71add13631e6c19a7c9/13.JPG)
+
+Delete Subscription
+
+![14](uploads/7568ea0c48d35e19395b73ff6eca6261/14.JPG)
+
+Edit Subscription
+
+![15](uploads/3f38f136cb255295da8ec7f86fbe3aee/15.JPG)
+
 
 
 ## As-Built Requirements
