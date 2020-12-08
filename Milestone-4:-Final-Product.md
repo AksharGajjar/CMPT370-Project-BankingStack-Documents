@@ -203,27 +203,27 @@ There are several other libraries in our requirements.txt file however, those ar
 ### How to Run tests
 At the moment none of our tests are runnable. This is because of the drastic changes we made to the code in order to implement a GUI. The main reason behind this error is the fact we didn’t update the tests as the code changed. In hindsight we should have written tests as we developed code instead of creating tests at an early stage.
 
-###Tested Parts of the System
+### Tested Parts of the System
 As of the submission we have successfully unit tested all the functions for the following four components.
 
 Encryption/Decryption
--The encryption and decryption of different strings json or otherwise
--The encryption and decryption of json and non strings was unit tested to ensure that the functions return the correct values (string is unchanged/correct after being encrypted and decrypted)and that the encryption/decryption functions cannot be passed an incorrect key without throwing exceptions
--These functions were some of the first built/unit tested due to their high rate of use in most other functions
+- The encryption and decryption of different strings json or otherwise
+- The encryption and decryption of json and non strings was unit tested to ensure that the functions return the correct values (string is unchanged/correct after being encrypted and decrypted)and that the encryption/decryption functions cannot be passed an incorrect key without throwing exceptions
+- These functions were some of the first built/unit tested due to their high rate of use in most other functions
 
 Login/Register
--The login and register q
--All login/register functions along with the functions that handle creating user directory and files have been unit tested. In terms of integration testing for these functions, we did that manually using both the GUI and the command line interface which was used in the demo.
+- The login and register q
+- All login/register functions along with the functions that handle creating user directory and files have been unit tested. In terms of integration testing for these functions, we did that manually using both the GUI and the command line interface which was used in the demo.
 -The login and register testing was some of the earliest testing we did since this is the first thing the user interacts with and so it’s important to have these features working correctly.
 
 Financial Plan/Notes
--Note and news filter functions 
--Did unit tests for each of the note and news filter function, integration and end-to-end testing wasn’t able to be done due to the amount of time we have is too packed.
--Tested add note function, edit note function, delete note function, add news filter function and the edit news function. Testing is done by checking whether it got the correct result as expected.
+- Note and news filter functions 
+- Did unit tests for each of the note and news filter function, integration and end-to-end testing wasn’t able to be done due to the amount of time we have is too packed.
+- Tested add note function, edit note function, delete note function, add news filter function and the edit news function. Testing is done by checking whether it got the correct result as expected.
 
 Subscriptions
--Add delete and edit subscription
--All the functions involved in manipulating the subscriptions json were unit tested. Testing was confirmed by opening the json and checking for the data to match what is expected.
+- Add delete and edit subscription
+- All the functions involved in manipulating the subscriptions json were unit tested. Testing was confirmed by opening the json and checking for the data to match what is expected.
 Much testing was also done with terminal commands and gui as manual testing
 
 ### Untested Sections of the System and Future Testing plans
@@ -236,3 +236,7 @@ If we were to continue development on this project our strategy in terms of test
 
 One of the key mistakes in our testing process was the fact that we wrote the tests before the functions. In reality this is a good programming practice. However, our design docs were not detailed enough for this to be a good option. We implemented many test cases and verified them but then last minute GUI implementations forced us to drastically change the code and this led to our test cases not being useful.
 
+### Third Party Testing Libraries
+We decided to use the Pytest python library for creating our unit tests. It seemed like a straightforward choice considering we used Python as our development language. The pytest framework provides ample features and is a testing framework. We only used it for our unit testing and didn’t get a chance to utilize some of its more powerful features.
+
+Pytest 6.1.2 -- https://docs.pytest.org/en/latest/contents.html#toc
