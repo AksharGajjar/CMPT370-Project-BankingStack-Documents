@@ -169,8 +169,8 @@ Edit Subscription
 In our Milestone 1 document we specified a few things that are not consistent with our final product.  We originally planned to include the functionality to link a Paypal account to our system but we abandoned the idea due to time constraints and the PayPal api being directed towards vendor transactions rather than our intended purpose.  We also planned to have an auto login feature to stay logged in to your linked banks but at the time we didn’t understand the plaid api or how everything was going to fit together.  Our program does not store user’s bank credentials, all the data we store from linking the bank is an access token that we acquire from the plaid api after it has verified that the user’s bank credentials are valid.  We also specified that we would use Tkinter to create our GUI but we actually have used a wrapper around Tkinter, appjar.  
 Some of our should have and could have features did not make it into the final product.  These features include the ability to attach notes to transactions, as well as no stock portfolio features were implemented nor were any asset trackers.
 
-## Programmer Documentation
-### Compilation Instruction
+# Programmer Documentation
+## Compilation Instruction
 
 [README](https://git.cs.usask.ca/CMPT370-01-2020/group9/-/blob/master/README.md)
 
@@ -199,4 +199,40 @@ The Python DateUtil library was used to handle some of the date and time objects
 
 There are several other libraries in our requirements.txt file however, those are all libraries used by the Plaid-python library. It does automatically download them when you get plaid-python but we included them just to be safe.
 
+## Testing Documentation & Instructions
+### How to Run tests
+At the moment none of our tests are runnable. This is because of the drastic changes we made to the code in order to implement a GUI. The main reason behind this error is the fact we didn’t update the tests as the code changed. In hindsight we should have written tests as we developed code instead of creating tests at an early stage.
+
+###Tested Parts of the System
+As of the submission we have successfully unit tested all the functions for the following four components.
+
+Encryption/Decryption
+-The encryption and decryption of different strings json or otherwise
+-The encryption and decryption of json and non strings was unit tested to ensure that the functions return the correct values (string is unchanged/correct after being encrypted and decrypted)and that the encryption/decryption functions cannot be passed an incorrect key without throwing exceptions
+-These functions were some of the first built/unit tested due to their high rate of use in most other functions
+
+Login/Register
+-The login and register q
+-All login/register functions along with the functions that handle creating user directory and files have been unit tested. In terms of integration testing for these functions, we did that manually using both the GUI and the command line interface which was used in the demo.
+-The login and register testing was some of the earliest testing we did since this is the first thing the user interacts with and so it’s important to have these features working correctly.
+
+Financial Plan/Notes
+-Note and news filter functions 
+-Did unit tests for each of the note and news filter function, integration and end-to-end testing wasn’t able to be done due to the amount of time we have is too packed.
+-Tested add note function, edit note function, delete note function, add news filter function and the edit news function. Testing is done by checking whether it got the correct result as expected.
+
+Subscriptions
+-Add delete and edit subscription
+-All the functions involved in manipulating the subscriptions json were unit tested. Testing was confirmed by opening the json and checking for the data to match what is expected.
+Much testing was also done with terminal commands and gui as manual testing
+
+### Untested Sections of the System and Future Testing plans
+We have not done any automated testing for the GUI since no one in the group had experience with such tools and the time frame of the project couldn’t account for the time required to implement something for automated GUI testing. We did extensive hands-on testing for the GUI. We did find some bugs in the GUI which will be discussed in the known bugs section. In the future we might consider using some automated GUI testing frameworks.
+
+As of the submission the main part that is not unit tested in the system is the plaid functions and the bank account related functions. These functions are crucial parts of the system however the current version doesn't have any formal unit testing because we had to make drastic changes to the functions in order to get them to work with the GUI. However we did do extensive manual testing to ensure the functions work and in that the overall system is not affected severely due to the lack of testing.
+One of the reasons this lack of testing occurred is because we decided to develop the test cases and built the test cases before we began coding the actual functions and did not anticipate that issues regarding the GUI would arise and so the most preliminary test cases were practically useless. After that we ran out of time to create test cases for the banking functions.
+
+If we were to continue development on this project our strategy in terms of testing would include the use of mocking to create user directories and files. These files would then be used in conjunction with unit testing and the plaid sandbox mode to thoroughly and automatically test each and every function that relates to the bank accounts features.
+
+One of the key mistakes in our testing process was the fact that we wrote the tests before the functions. In reality this is a good programming practice. However, our design docs were not detailed enough for this to be a good option. We implemented many test cases and verified them but then last minute GUI implementations forced us to drastically change the code and this led to our test cases not being useful.
 
