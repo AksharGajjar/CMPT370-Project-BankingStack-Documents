@@ -244,7 +244,7 @@ Pytest 6.1.2 -- https://docs.pytest.org/en/latest/contents.html#toc
 ## As-Built Design
 ### Design Storyboards
 The entire visual design of our project varies from our initial design storyboard.  We began to run out of time to finish our project and we encountered a time crunch when it came time to create our GUI.  We used a GUI library that was easy to use to get everything running in a short period of time but it’s also not very robust and we didn’t have a lot of control over the design.
-
+### UML
 We have some of the Class diagrams from our system however because most of our system is not in terms of classes we didn't get time to go back and manually create an updated UML diagram. 
 
 +-------------------+       +-------------------------+       +--------------------+
@@ -300,6 +300,11 @@ We have some of the Class diagrams from our system however because most of our s
 | log_message     |                            
 | send404Error    |                            
 +-----------------+ 
+
+### Persistent Storage Details
+![temp](uploads/abdf6131b05d40d09a008488ed14ccc1/temp.png)
+
+Naming Schemes changed during development as needed. The subdirectory for notes was also removed as only one note file was needed.
 
 ## Known Bugs, Incomplete Features, and Workarounds
 
