@@ -240,3 +240,9 @@ One of the key mistakes in our testing process was the fact that we wrote the te
 We decided to use the Pytest python library for creating our unit tests. It seemed like a straightforward choice considering we used Python as our development language. The pytest framework provides ample features and is a testing framework. We only used it for our unit testing and didn’t get a chance to utilize some of its more powerful features.
 
 Pytest 6.1.2 -- https://docs.pytest.org/en/latest/contents.html#toc
+
+## As-Built Design
+### Design Storyboards
+The entire visual design of our project varies from our initial design storyboard.  We began to run out of time to finish our project and we encountered a time crunch when it came time to create our GUI.  We used a GUI library that was easy to use to get everything running in a short period of time but it’s also not very robust and we didn’t have a lot of control over the design.
+
+## Known Bugs, Incomplete Features, and Workarounds
