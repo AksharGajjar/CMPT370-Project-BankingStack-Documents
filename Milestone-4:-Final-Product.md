@@ -245,4 +245,85 @@ Pytest 6.1.2 -- https://docs.pytest.org/en/latest/contents.html#toc
 ### Design Storyboards
 The entire visual design of our project varies from our initial design storyboard.  We began to run out of time to finish our project and we encountered a time crunch when it came time to create our GUI.  We used a GUI library that was easy to use to get everything running in a short period of time but it’s also not very robust and we didn’t have a lot of control over the design.
 
+We have some of the Class diagrams from our system however because most of our system is not in terms of classes we didn't get time to go back and manually create an updated UML diagram. 
+
++-------------------+       +-------------------------+       +--------------------+
+|   accountBalance  |       |     tokenAccountInfo    |       | accountTransaction |
+|-------------------|       |-------------------------|       |--------------------|
+| account_id        |       | consent_expiration_time |       | account_id         |
+| account_name      |       | institution_id          |       | amount             |
+| account_number    |       | last_failed_update      |       | category           |
+| account_subtype   |       | last_successful_update  |       | currency_code      |
+| account_type      |       | raw_data                |       | date               |
+| balance_available |       |-------------------------|       | description        |
+| balance_current   |       | __init__                |       | merchant_name      |
+| balance_limit     |       | __str__                 |       | raw_data           |
+| currency_code     |       +-------------------------+       | status_pending     |
+| raw_data          |                                         | transaction_id     |
+|-------------------|                                         |--------------------|
+| __init__          |                                         | __init__           |
+| __str__           |                                         | __str__            |
++-------------------+                                         | to_json            |
+                                                              +--------------------+
+
+
++-------------------------------+       +-----------------+
+|       institutionsStatus      |       | serverDataStore |
+|-------------------------------|       |-----------------|
+| available_products            |       | plaid_response  |
+| institution_id                |       | server_params   |
+| institution_item_login_status |       |-----------------|                     
+| raw_data                      |       | __init__        |                     
+| transactions_status           |       +-----------------+                     
+|-------------------------------|                                               
+| __init__                      |                                               
++-------------------------------+  
+
++------------------------+
+| BaseHTTPRequestHandler |
+|------------------------|
+|       None             |
++------------------------+
+        .                                      
+       /_\                                     
+        |                                      
+        |                                                                
++-----------------+                            
+| plaidHTTPServer |                            
+|-----------------|                            
+| server_params   |  ---->  [ json.loads ]     
+|-----------------|                            
+| __init__        |  ---->  [ serverDataStore ]
+| do_GET          |                            
+| do_POST         |                            
+| fileServe       |                            
+| log_message     |                            
+| send404Error    |                            
++-----------------+ 
+
 ## Known Bugs, Incomplete Features, and Workarounds
+
+Some of our Must Have Features we were unable to implement and they are:
+Load time for pages must be less than 2 seconds.
+The program should run off of an executable.
+Displays user-customized news feed.
+Transaction and balance data should update when the user logs in and allow on-demand refreshes afterward.
+
+Load time for pages must be less than 2 seconds.
+Our load times are not always under 2 seconds due to our reliance on all the data being passed to us through the apis every time we are gated by the user’s internet connection and the response time of the apis to respond with the data.
+
+The program should run off of an executable.
+We tried to make it so that our code would install and run from an executable but we ran into troubles making that happen near the end and we had to abandon this.
+
+Displays user-customized news feed.
+Our implementation of the user-customized news feed has partially been implemented however in its current state it is not really a feed but more so that we are presenting articles based on a search and the user can look more into an article on their own.
+
+Transaction and balance data should update when the user logs in and allow on-demand refreshes afterward.
+Transaction and balance data is not being stored locally as we originally thought so on login that data is not being received however when the user visits the appropriate tab for that information data will be received and displayed for the user.  The data can be refreshed by reloading that page.
+
+Verifying user registration via an email verification was a planned feature and would have also been used to recover a user’s login credentials in the case that they forgot them however this feature also was not implemented due to time constraints.
+
+At the moment none of our tests are runnable. This is because of the drastic changes we made to the code in order to implement a GUI. The main reason behind this error is the fact we didn’t update the tests as the code changed. In hindsight we should have written tests as we developed code instead of creating tests at an early stage.
+
+Transaction viewing is finicky
+- After linking a new account sometimes the transactions viewing doesn't work. The issue is caused by the way appJar handles frames and subwindows. This is one of the bad parts of appJar
