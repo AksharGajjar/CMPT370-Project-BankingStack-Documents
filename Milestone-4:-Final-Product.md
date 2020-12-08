@@ -252,7 +252,7 @@ We have some of the Class diagrams from our system however because most of our s
 ### Persistent Storage Details
 ![temp](uploads/abdf6131b05d40d09a008488ed14ccc1/temp.png)
 
-Naming Schemes changed during development as needed. The subdirectory for notes was also removed as only one note file was needed.
+Naming Schemes changed during development as needed. The subdirectory for notes was also removed as only one note file was needed as the transaction notes feature was dropped from release. The APICrendentials.json file was added to store the necessary PLAID credentials needed to access the data. userAccounts.data was also added to hold a list of all accounts.
 
 ## Known Bugs, Incomplete Features, and Workarounds
 
