@@ -8,3 +8,11 @@ Future plans for this project include things such as:
 - Adding the ability to send and receive money.
 - Ability to manage investment portfolios
 - Ability to track and manage other assets such as property, gold, silver, crypto, etc.
+
+# Group 9
+
+Akshar Gajjar
+Devin Ramaswami
+Benjamin Fehr
+Travis Baldwin
+Yee Jing Shin
