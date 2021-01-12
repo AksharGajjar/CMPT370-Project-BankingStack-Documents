@@ -11,8 +11,8 @@ Future plans for this project include things such as:
 
 # Group 9
 
-Akshar Gajjar
-Devin Ramaswami
-Benjamin Fehr
-Travis Baldwin
-Yee Jing Shin
+- Akshar Gajjar
+- Devin Ramaswami
+- Benjamin Fehr
+- Travis Baldwin
+- Yee Jing Shin
